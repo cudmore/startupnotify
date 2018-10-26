@@ -17,6 +17,9 @@ To send tweets you must have a normal twitter account and than apply for a twitt
 
 The `startuptweet.py` code uses [tweepy](http://www.tweepy.org/)
 
+	# install pip3 if needed
+	sudo apt-get install python3-pip --yes
+	
 	pip3 install tweepy
 
 ## To send email
