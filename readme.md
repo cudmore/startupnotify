@@ -73,8 +73,15 @@ python3 startuptweet.py 'my test tweet worked'
 
 Use `crontab -e` and append these lines to your crontab file.
 
+At a command prompt
+
+    crontab -e
+
+Select pico editor and paste the efollowing at the end of the file.
+
 ```
 @reboot (sleep 10; /usr/bin/python3 /home/pi/startupnotify/startuptweet.py booted)
 @reboot (sleep 10; /usr/bin/python3 /home/pi/startupnotify/startupmailer.py booted)
 ```
+Quit pico editor with keyboard ctrl+x
 
